@@ -22,13 +22,14 @@
 
   <nav style="background-color: #00A65A;" class="text-white w-full py-3 shadow-md">
     <div class="container mx-auto flex justify-around items-center">
-      <a href="#" class="px-4 py-2 hover:bg-green-600 rounded-md">ข้อมูลทั่วไป</a>
-      <a href="#" class="px-4 py-2 hover:bg-green-600 rounded-md">ระเบียบการ</a>
+      <a href="#" class="px-4 py-2 hover:bg-green-600 rounded-md">หน้าหลัก</a>
+      <a href="#" class="px-4 py-2 hover:bg-green-600 rounded-md">ตารางเรียน</a>
+      <a href="#" class="px-4 py-2 hover:bg-green-600 rounded-md">ตารางการใช้ห้อง</a>
       <a href="#" class="px-4 py-2 hover:bg-green-600 rounded-md">ปฏิทินการศึกษา</a>
-      <a href="#" class="px-4 py-2 hover:bg-green-600 rounded-md">ตรวจสอบผลสอบ</a>
-      <a href="#" class="px-4 py-2 hover:bg-green-600 rounded-md">ตรวจสอบผลลงทะเบียน</a>
-      <a href="#" class="px-4 py-2 hover:bg-green-600 rounded-md">คำร้องขอต่างๆ</a>
-      <a href="#" class="px-4 py-2 hover:bg-green-600 rounded-md">ข่าวสาร</a>
+      <a href="#" class="px-4 py-2 hover:bg-green-600 rounded-md">หลังสูตรที่เปิดสอน</a>
+      <a href="#" class="px-4 py-2 hover:bg-green-600 rounded-md">แผนเข้าและการลงทะเบียน</a>
+      <a href="#" class="px-4 py-2 hover:bg-green-600 rounded-md">เว็บไซต์ที่ดำเนินงานบริการ</a>
+      <a href="#" class="px-4 py-2 hover:bg-green-600 rounded-md">ออกจากระบบ</a>
     </div>
   </nav>
 
@@ -43,25 +44,13 @@
         <div class="flex-1">
           <label for="calendarSet" class="block text-sm font-medium text-gray-700 mb-1">ชุดปฏิทิน</label>
           <select id="calendarSet" class="w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-green-200">
-            <option value="1000">1000 : วิทยาลัยบริหารศาสตร์</option>
             <option value="1001" selected>1001 : ปริญญาตรี ปกติ</option>
-            <option value="1002">1002 : ปริญญาตรี สมทบ</option>
-            <option value="1003">1003 : ปริญญาตรี ภาคปกติ วิทยาเขต</option>
-            <option value="1006">1006 : นักศึกษาทดลองเรียนบัณฑิตศึกษา</option>
-            <option value="2001">2001 : บัณฑิตศึกษา ปกติ</option>
-            <option value="2002">2002 : บัณฑิตศึกษา สมทบ</option>
-            <option value="3001">3001 : ปริญญาเอก ปกติ</option>
-            <option value="3002">3002 : ปริญญาเอก สมทบ</option>
-            <option value="7001">7001 : แม่โจ้ - ชุมพร</option>
-            <option value="8001">8001 : แม่โจ้ - แพร่</option>
-            <option value="9999">9999 : TEST</option>
           </select>
         </div>
         <div>
           <label for="academicYear" class="block text-sm font-medium text-gray-700 mb-1">ปีการศึกษา</label>
           <select id="academicYear" class="w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-green-200">
             <option value="2568">2568</option>
-            <option value="2567">2567</option>
           </select>
         </div>
         <div>
@@ -464,151 +453,7 @@
           </tr>
         </tbody>
       </table>
-
-      <table id="table-1000-2568-1" class="w-full border-collapse table-auto text-sm hidden">
-        <caption class="text-left text-base font-semibold py-2">ปีการศึกษา 2568 / ภาค 1</caption>
-        <thead class="bg-green-200">
-          <tr>
-            <th class="border p-2 text-left">รายการ</th>
-            <th class="border p-2 text-left">วันเริ่มต้น</th>
-            <th class="border p-2 text-left">วันสุดท้าย</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="hover:bg-gray-50">
-            <td class="border p-2">- ลงทะเบียนปกติ (on-line)</td>
-            <td class="border p-2">11 พ.ย. 2568 0:01 น.</td>
-            <td class="border p-2">14 พ.ย. 2568 23:59 น.</td>
-          </tr>
-          <tr class="hover:bg-gray-50">
-            <td class="border p-2">- ชั้นปี 1 (ตามรหัสปีเข้า)</td>
-            <td class="border p-2">12 พ.ย. 2568 8:30 น.</td>
-            <td class="border p-2">12 พ.ย. 2568 23:59 น.</td>
-          </tr>
-          <tr class="hover:bg-gray-50">
-            <td class="border p-2">- ชั้นปี 2 (ตามรหัสปีเข้า)</td>
-            <td class="border p-2">13 พ.ย. 2568 8:30 น.</td>
-            <td class="border p-2">13 พ.ย. 2568 23:59 น.</td>
-          </tr>
-          <tr class="hover:bg-gray-50">
-            <td class="border p-2">- ชั้นปี 3 (ตามรหัสปีเข้า)</td>
-            <td class="border p-2">14 พ.ย. 2568 8:30 น.</td>
-            <td class="border p-2">14 พ.ย. 2568 23:59 น.</td>
-          </tr>
-          <tr class="hover:bg-gray-50">
-            <td class="border p-2">- ชั้นปี 4 (ตามรหัสปีเข้า)</td>
-            <td class="border p-2">14 พ.ย. 2568 8:30 น.</td>
-            <td class="border p-2">14 พ.ย. 2568 23:59 น.</td>
-          </tr>
-          <tr class="hover:bg-gray-50">
-            <td class="border p-2">- ชั้นปีอื่นๆ</td>
-            <td class="border p-2">14 พ.ย. 2568 8:30 น.</td>
-            <td class="border p-2">14 พ.ย. 2568 23:59 น.</td>
-          </tr>
-          <tr class="hover:bg-gray-50">
-            <td class="border p-2">- ลงทะเบียนเพิ่ม/ลด/เปลี่ยนกลุ่ม (on-line)</td>
-            <td class="border p-2">17 พ.ย. 2568 8:30 น.</td>
-            <td class="border p-2">19 พ.ย. 2568 23:59 น.</td>
-          </tr>
-          <tr class="hover:bg-gray-50">
-            <td class="border p-2">- ช่วงวันทำการเพิ่มรายวิชา</td>
-            <td class="border p-2">17 พ.ย. 2568 8:30 น.</td>
-            <td class="border p-2">19 พ.ย. 2568 23:59 น.</td>
-          </tr>
-          <tr class="hover:bg-gray-50">
-            <td class="border p-2">- ช่วงวันทำการลดรายวิชา</td>
-            <td class="border p-2">17 พ.ย. 2568 8:30 น.</td>
-            <td class="border p-2">19 พ.ย. 2568 23:59 น.</td>
-          </tr>
-          <tr class="hover:bg-gray-50">
-            <td class="border p-2">- ช่วงวันทำการเปลี่ยนกลุ่มรายวิชา</td>
-            <td class="border p-2">17 พ.ย. 2568 8:30 น.</td>
-            <td class="border p-2">19 พ.ย. 2568 23:59 น.</td>
-          </tr>
-          <tr class="hover:bg-gray-50">
-            <td class="border p-2">- ช่วงลดรายวิชาโดยได้รับค่าหน่วยกิตคืนเต็ม</td>
-            <td class="border p-2">17 พ.ย. 2568 8:30 น.</td>
-            <td class="border p-2">19 พ.ย. 2568 23:59 น.</td>
-          </tr>
-          <tr class="hover:bg-gray-50">
-            <td class="border p-2">- วันเปิดภาคการศึกษา</td>
-            <td class="border p-2">17 พ.ย. 2568 8:30 น.</td>
-            <td class="border p-2">17 พ.ย. 2568 23:59 น.</td>
-          </tr>
-          <tr class="hover:bg-gray-50">
-            <td class="border p-2">- ลงทะเบียนล่าช้า</td>
-            <td class="border p-2">17 พ.ย. 2568 8:30 น.</td>
-            <td class="border p-2">19 พ.ย. 2568 23:59 น.</td>
-          </tr>
-          <tr class="hover:bg-gray-50">
-            <td class="border p-2">- งวดชำระเงินตามปกติ</td>
-            <td class="border p-2">24 พ.ย. 2568 8:30 น.</td>
-            <td class="border p-2">30 พ.ย. 2568 23:30 น.</td>
-          </tr>
-          <tr class="hover:bg-gray-50">
-            <td class="border p-2">- ช่วงพิมพ์ใบแจ้งหนี้ผ่าน WEB</td>
-            <td class="border p-2">24 พ.ย. 2568 8:30 น.</td>
-            <td class="border p-2">30 พ.ย. 2568 23:30 น.</td>
-          </tr>
-          <tr class="hover:bg-gray-50">
-            <td class="border p-2">- ชำระเงินที่เคาน์เตอร์ธนาคารกรุงไทยทุกสาขาทั่วประเทศ</td>
-            <td class="border p-2">24 พ.ย. 2568 8:30 น.</td>
-            <td class="border p-2">30 พ.ย. 2568 23:30 น.</td>
-          </tr>
-          <tr class="hover:bg-gray-50">
-            <td class="border p-2">- วันแจ้งความจำนงสำเร็จการศึกษาผ่านระบบออนไลน์</td>
-            <td class="border p-2">8 ธ.ค. 2568 8:30 น.</td>
-            <td class="border p-2">9 ธ.ค. 2568 16:30 น.</td>
-          </tr>
-          <tr class="hover:bg-gray-50">
-            <td class="border p-2">- ช่วงของการรักษาสภาพนักศึกษา/ลาพักการศึกษา</td>
-            <td class="border p-2">17 พ.ย. 2568 8:30 น.</td>
-            <td class="border p-2">18 ธ.ค. 2568 16:30 น.</td>
-          </tr>
-          <tr class="hover:bg-gray-50">
-            <td class="border p-2">- วันสุดท้ายของการขอแก้ไขผลการศึกษา I</td>
-            <td class="border p-2">18 ธ.ค. 2568 8:30 น.</td>
-            <td class="border p-2">18 ธ.ค. 2568 16:30 น.</td>
-          </tr>
-          <tr class="hover:bg-gray-50">
-            <td class="border p-2">- ช่วงวันสอบกลางภาค</td>
-            <td class="border p-2">26 ม.ค. 2569 8:30 น.</td>
-            <td class="border p-2">1 ก.พ. 2569 16:30 น.</td>
-          </tr>
-          <tr class="hover:bg-gray-50">
-            <td class="border p-2">- ช่วงวันทำการถอนรายวิชา (ติด W)</td>
-            <td class="border p-2">1 ธ.ค. 2568 8:30 น.</td>
-            <td class="border p-2">10 ก.พ. 2569 16:30 น.</td>
-          </tr>
-          <tr class="hover:bg-gray-50">
-            <td class="border p-2">- วันสุดท้ายของการเรียนการสอน</td>
-            <td class="border p-2">8 มี.ค. 2569 8:30 น.</td>
-            <td class="border p-2">8 มี.ค. 2569 16:30 น.</td>
-          </tr>
-          <tr class="hover:bg-gray-50">
-            <td class="border p-2">- ช่วงวันสอบปลายภาค</td>
-            <td class="border p-2">9 มี.ค. 2569 8:00 น.</td>
-            <td class="border p-2">22 มี.ค. 2569 16:30 น.</td>
-          </tr>
-          <tr class="hover:bg-gray-50">
-            <td class="border p-2">- วันปิดภาคการศึกษา</td>
-            <td class="border p-2">23 มี.ค. 2569 8:30 น.</td>
-            <td class="border p-2">23 มี.ค. 2569 16:30 น.</td>
-          </tr>
-          <tr class="hover:bg-gray-50">
-            <td class="border p-2">- วันสุดท้ายของการส่งผลการศึกษา</td>
-            <td class="border p-2">30 มี.ค. 2569 8:00 น.</td>
-            <td class="border p-2">30 มี.ค. 2569 23:30 น.</td>
-          </tr>
-          <tr class="hover:bg-gray-50">
-            <td class="border p-2">- วันประกาศผลการศึกษา</td>
-            <td class="border p-2">31 มี.ค. 2569 16:30 น.</td>
-            <td class="border p-2">31 มี.ค. 2569 23:30 น.</td>
-          </tr>
-        </tbody>
-      </table>
-
-    </div>
+  </div>
   </main>
 
   <script>
