@@ -518,46 +518,45 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      // ดึง Element ของ Dropdowns
+      // Dictionaries of Elements
       const calendarSetSelect = document.getElementById('calendarSet');
       const academicYearSelect = document.getElementById('academicYear');
       const semesterSelect = document.getElementById('semester');
-
-      // ดึง Element ของตารางทั้งหมด
-      // ใช้ '#calendarTablesContainer table' เพื่อเลือกตารางทั้งหมดที่อยู่ภายใน div ที่มี id 'calendarTablesContainer'
       const allTables = document.querySelectorAll('#calendarTablesContainer table');
 
+      // For Mobile Menu Toggle
+      const hamburgerButton = document.getElementById('hamburger');
+      const navbarLinks = document.getElementById('navbar-links');
+
+      // Function to show/hide the correct academic calendar table
       function showCorrectTable() {
         const selectedCalendarSet = calendarSetSelect.value;
         const selectedAcademicYear = academicYearSelect.value;
         const selectedSemester = semesterSelect.value;
-
-        // สร้าง ID ของตารางเป้าหมาย
         const targetTableId = `table-${selectedCalendarSet}-${selectedAcademicYear}-${selectedSemester}`;
 
-        // ซ่อนตารางทั้งหมดก่อน
         allTables.forEach(table => {
           table.classList.add('hidden');
         });
 
-        // ค้นหาตารางที่ตรงกับ ID ที่สร้างขึ้น
         const targetTable = document.getElementById(targetTableId);
-
-        // ถ้าหาตารางเจอ ให้ลบคลาส 'hidden' ออกเพื่อแสดงผล
         if (targetTable) {
           targetTable.classList.remove('hidden');
-          // console.log("Showing table:", targetTableId); // สามารถใช้ log เพื่อดีบั๊กได้
-        } else {
-          // console.log("Table not found for ID:", targetTableId); // สามารถใช้ log เพื่อดีบั๊กได้
         }
       }
 
-      // เพิ่ม Event Listener เมื่อมีการเปลี่ยนแปลงค่าใน dropdowns
+      // Toggle mobile menu visibility
+      hamburgerButton.addEventListener('click', function() {
+        navbarLinks.classList.toggle('mobile-menu-hidden');
+        navbarLinks.classList.toggle('flex-col'); // Ensure it stacks vertically when open
+      });
+
+      // Event listeners for academic calendar dropdowns
       calendarSetSelect.addEventListener('change', showCorrectTable);
       academicYearSelect.addEventListener('change', showCorrectTable);
       semesterSelect.addEventListener('change', showCorrectTable);
 
-      // เรียกฟังก์ชันครั้งแรกเมื่อโหลดหน้า เพื่อแสดงตารางตามค่าเริ่มต้น
+      // Initial call to display the correct table on page load
       showCorrectTable();
     });
   </script>
